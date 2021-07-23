@@ -9,7 +9,7 @@ divInfos.id = 'divInfos'
 const title = () => {
     let h1 = document.createElement('h1')
     let span = document.createElement('span')
-    let texto = document.createTextNode('Torre de Hanoi')
+    let texto = document.createTextNode('Torre de Hanói')
     span.appendChild(texto)
     h1.appendChild(span)
     document.body.appendChild(h1)
