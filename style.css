@@ -1,0 +1,107 @@
+html {
+    font-family: 'Nunito';
+}
+
+body {
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#tower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+#base {
+    width: 300px;
+    height: 10px;
+    margin: 0 auto;
+    background-color: rgb(186, 120, 62);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#pillars {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+}
+
+#pillar1, #pillar2, #pillar3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 10px;
+    height: 100px;
+    margin-bottom: -1px;
+    background-color: rgb(206, 136, 87);
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#ring1, #ring2, #ring3, #ring4, #ring5, #ring6, #ring7 {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#ring1 {
+    background-color: rgb(255, 0, 0);
+}
+
+#ring2 {
+    background-color: rgb(254, 128, 0);
+}
+
+#ring3 {
+    background-color: rgb(252, 238, 33);
+}
+
+#ring4 {
+    background-color: rgb(57, 181, 74);
+}
+
+#ring5 {
+    background-color: rgb(41, 171, 226);
+}
+
+#ring6 {
+    background-color: rgb(46, 49, 146);
+}
+
+#ring7 {
+    background-color: rgb(102, 45, 145);
+}
+
+form {
+    width: 250px;
+    margin: 0 auto;
+    border: 2px dashed ;
+    padding-bottom: 10px;
+}
+
+form input {
+    margin: 0 8px;
+}
+
+form h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#winMsg h2 {
+    margin-bottom: 5px;
+}
