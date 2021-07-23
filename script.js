@@ -47,13 +47,13 @@ const genRings = (qtsRings) => {
     padrao1.innerHTML = ''
     padrao2.innerHTML = ''
     padrao3.innerHTML = ''
-    
+
 
     for (let i = 0; i < qtsRings; i++) {
         let pillar = document.getElementById('pillar1')
         let ring = document.createElement('div')
         let subWidth = i * 10
-        ring.id = `ring${qtsRings-i}`
+        ring.id = `ring${qtsRings - i}`
         ring.style.width = `${90 - subWidth}px`
         ring.className = `${90 - subWidth}`
         ring.style.height = '10px'
@@ -70,8 +70,8 @@ const genButtons = (num) => {
     for (let i = 0; i < 5; i++) {
         let input = document.createElement('input')
         input.type = 'button'
-        input.id = `qntRings${i+3}`
-        input.value = i+3
+        input.id = `qntRings${i + 3}`
+        input.value = i + 3
         input.onclick = qntRings
         form.appendChild(input)
     }
@@ -81,7 +81,7 @@ const genButtons = (num) => {
 const infos = (num) => {
     let div = document.getElementById('divInfos')
     let h3 = document.createElement('h3')
-    if (num === 3){
+    if (num === 3) {
         let texto = document.createTextNode('São necessários no mínimo 7 movimentos para vencer.')
         h3.appendChild(texto)
     } else if (num === 4) {
@@ -114,7 +114,7 @@ const qntRings = (event) => {
 const selectRing = (event) => {
     let currentPillar = event.currentTarget
     let currentRing = currentPillar.lastElementChild
-    
+
     if (selector == null) {
         selector = currentRing
         currentRing.style.marginBottom = '5px'
@@ -151,10 +151,10 @@ const condWin = () => {
         let h2 = document.createElement('h2')
         let texto = document.createTextNode(
             `Você venceu, parabéns! Você usou ${count} movimentos!`
-            )
+        )
         let img = document.createElement('img')
-        img.src = 'festa.png'
-        img.alt = 'Emoji de festa'
+        img.src = './img/festa.png'
+        img.alt = 'Emoji de festa comemorativa'
         img.width = '40'
         h2.appendChild(texto)
         h2.style.textAlign = 'center'
