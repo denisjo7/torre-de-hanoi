@@ -64,7 +64,7 @@ const genRings = (qtsRings) => {
 const genButtons = (num) => {
     let form = document.createElement('form')
     let h2 = document.createElement('h2')
-    let texto = document.createTextNode('Quantidade de Aneis')
+    let texto = document.createTextNode('Quantidade de Anéis')
     h2.appendChild(texto)
     form.appendChild(h2)
     for (let i = 0; i < 5; i++) {
